@@ -47,4 +47,16 @@ const listUser = async(req,res)=>{
     return res.status(200).send({user});
 };
 
-module.exports ={registerUser, listUser};
+const registerAdmin = async (req, res) => {
+
+};
+
+const updateUser = async (req, res) =>{
+
+};
+
+const deleteUser = async (req, res) =>{
+
+}
+
+module.exports ={registerUser, listUser, registerAdmin, updateUser, deleteUser};

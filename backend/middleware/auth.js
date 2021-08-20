@@ -16,5 +16,4 @@ const auth = async (req,res,next) => {
         return res.status(400).send("Authorization denied: Invalid token")
     }
 };
-module.exports = {auth};
-
+module.exports = auth;
