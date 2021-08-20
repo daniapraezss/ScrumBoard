@@ -12,5 +12,7 @@ router.post("/registerRole", RoleController.registerRole);
 // http://Localhost:3001/api/role/listRole
 
 router.get("/listRole", RoleController.listRoles);
+router.put("/updateRole", RoleController.updateRole);
+
 
 module.exports = router;

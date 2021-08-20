@@ -7,6 +7,9 @@ const Admin = require("../middleware/admin");
 
 
 router.post("/registerUser", UserController.registerUser);
+router.post("/registerAdmin",  Auth, ValidateUser, Admin, UserController.registerAdmin);
 router.get("/listUser/:name?", Auth, ValidateUser, Admin, UserController.listUser);
+router.put("/updateUser", Auth, ValidateUser, Admin, UserController.updateUser);
+router.put("/deleteUser", Auth, ValidateUser, Admin, UserController.deleteUser);
 
 module.exports = router;
